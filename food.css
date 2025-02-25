@@ -1,0 +1,525 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    border: 1px solid black;
+    position: relative;
+    
+}
+
+.head{
+    
+    filter: blur(5px);
+    pointer-events: none; 
+    
+}
+
+.blur{
+    
+    filter: blur(5px);
+    pointer-events: none; 
+    
+}
+
+
+.great{
+    width: 100px;
+    height: 100px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.h1{
+    position: absolute;
+    margin-left: 180px;
+    font-size: 50px;
+    font-style:italic;
+    font-family:cursive;
+    top: 40px;
+    color: white;
+    
+}
+
+.h6{
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    font-size: 20px;
+    font-style:oblique;
+    color: white;
+}
+
+li{
+    display: inline;
+    list-style-type: none;
+}
+
+nav{
+   margin-top: 30px;
+   margin-right: 30px; 
+}
+
+li button{
+   margin: 10px;
+   font-size: 20px;
+   padding: 20px;
+   background-color: bisque;
+   border: none;
+   font-family :serif;
+   border-radius: 50px;
+}
+
+nav ul li button:hover{
+    background-color: cadetblue;
+}
+
+.login{
+    border: 1px solid black;
+    background-color: rgb(149, 132, 8);
+    color: white;
+}
+
+.Flavors{
+    float: left;
+    animation: sideIn 1s ease-in-out 1.0s backwards; 
+    
+}
+.journey{
+    
+    margin-left: 300px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-style: oblique;
+    margin-top: 50px;
+    color: white;
+}
+
+.paragraph{
+   
+    margin-left: 150px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    font-style: oblique;
+    line-height: 25px;
+    color: white;
+    padding: 20px;
+}
+
+.load1{
+    position: absolute;
+    background: white;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    top: 50px;
+    
+}
+
+.glass{
+    color: rgb(16, 11, 11);
+    font-size: 20px;
+}
+
+.search{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    color: black;
+    font-size: 20px;
+    transition: 0.4s;
+    width: 0;
+}
+
+.load1:hover .search{
+    width: 200px;
+}
+
+.image1{
+    margin-top: 80px;
+}
+
+.image{
+    width: 500px;
+    height: 500px;
+    background-size: cover;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgba(198, 189, 17, 0.326);
+    margin-left: 50px;
+    transition: width 2s, height 2s, transform 2s;
+    animation: fadeInUp 1s ease-in-out 1.0s backwards;  
+}
+
+.image1 .image:hover{
+    width: 300px;
+    height: 300px;
+    transform: rotate(180deg);
+}
+
+.listimage{
+    position: absolute;
+    top: 75%;
+    left: 80px;
+    overflow: hidden;
+   
+}
+
+.image2{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(210, 198, 198);
+    border-radius: 20px;
+    margin-left: 30px;
+    padding: 10px;
+    background-color: deeppink; 
+    object-fit: cover;
+    transition: trasform 0.8s ;
+    animation: fadeInUp 1s ease-in-out 1.0s backwards;
+}
+
+.listimage .image2:hover {
+   transform: scale(0.9);
+}
+
+
+
+@keyframes fadeInUp {
+    
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes sideIn {
+    
+    from{
+        opacity: 0;
+        transform: translateX(10px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+.welcome{
+   position: relative;
+   margin: 50px 100px;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#order{
+    font-size: 15px;
+}
+
+#down{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 8px;
+    font-size: 40px;
+    color: brown;
+    
+}
+
+.foodimg{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.foodimg img{
+    
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    flex: none;
+    border: 1px;
+    border-radius: 30px;
+    margin-inline: 12px;
+    transition: transform 0.5s;
+    
+}
+
+.foodimg::-webkit-scrollbar{
+   display: none;
+}
+
+.side{
+    display: flex;
+    align-items: center;
+    margin: 10px auto;
+}
+
+#left #right{
+    cursor: pointer;
+}
+
+.foodimg img:hover{
+    transform: scale(0.9);
+}
+
+div .a{
+    margin-left: 50px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div .b{
+    margin-left: 50px;
+    font-size: 13px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+div .c{
+    margin-left: 50px;
+    font-size: 13px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#color{
+    color: green;
+}
+
+
+
+.user{
+    margin-top: 30px;
+    margin-left: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.interest{
+    display: flex;
+}
+
+.interest img{
+    width: 100px;
+    height: 100px;
+    margin-left: 80px;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+div .d{
+    margin-left: 100px;
+}
+
+.cluster2{
+    margin: 50px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.cluster2 button{
+    width: 100px;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    
+}
+
+.cluster2 button:hover {
+    background-color: gray;
+}
+.cluster2::-webkit-scrollbar{
+    display: none;
+ }
+
+ .top1{
+    margin-left:80px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+ }
+
+ .custom{
+    display: flex;
+    transition: transform 0.8s;
+ }
+
+.custom img{
+    width: 300px;
+    height: 400px;
+    margin-left: 80px;
+    border-radius: 30px;
+    margin-top: 30px;
+    object-fit: cover;
+}
+.custom img:hover{
+    transform: scale(1.1); 
+}
+
+.customwait{
+    margin-left: 70px;
+    margin-top: 100px;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.customwait .biryani{
+    font-size: 30px;
+    color: gray;
+    margin-left: 10px;
+}
+
+.customwait .hotel{
+    font-size: 40px;
+}
+
+.customwait .time{
+    font-size: 20px;
+}
+
+.customwait .deserts{
+    font-size: 20px;
+    color: grey;
+}
+
+.customwait .area{
+    font-size: 20px;
+    color: gray;
+}
+
+.dots{
+    position: absolute;
+    right: 100px;
+    margin-top: 50px;
+    font-size: 30px;
+    color: gray;
+}
+
+#loginform{
+    position: absolute;
+    border: 1px solid white;
+    height: 400px;
+    width: 400px;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 25px 50px  rgb(164, 215, 215);
+    left: 500px;
+    top: 100px;
+    display: none; 
+    z-index: 5000;  
+}
+
+#registration{
+    position: absolute;
+    border: 1px solid white;
+    height: 500px;
+    width: 400px;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 25px 50px  rgb(164, 215, 215);
+    left: 500px;
+    top: 100px;
+    display: none;  
+    z-index: 5000; 
+    
+}
+
+#forgetpass{
+    position: absolute;
+    border: 1px solid white;
+    height: 450px;
+    width: 400px;
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius: 30px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 25px 50px  rgb(164, 215, 215);
+    left: 500px;
+    top: 100px;
+    display: none;  
+    z-index: 5000; 
+}
+
+form{
+    width: 200px;
+    margin-left: 50px;
+}
+
+.sign{
+    text-align: center;
+    padding: 20px;
+    font-size: 40px;
+}
+.mail{
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.pass{
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+}
+.input{
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    background-color: antiquewhite;
+}
+
+.submit{
+    padding: 5px;
+    width: 300px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: aqua;
+    margin-top: 20px;
+}
+.submit:hover{
+    background-color: burlywood;
+}
+
+.forget{
+    padding: 30px 30px;
+    color: white;
+    margin-top: 30px;
+    font-size: 15px;
+}
+.forget:hover{
+    color: lightblue;
+}
+.require{
+    display: flex;
+    justify-content: space-between;
+}
+#require{
+    margin-left: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
