@@ -5,8 +5,9 @@
 }
 
 .stick{
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%;
     padding: 5px;
     border: 1px solid #6d716d;
     background-color: rgb(21, 34, 34);
@@ -59,7 +60,7 @@
     font-style:italic;
     font-family:cursive;
     top: 40px;
-    color: white;
+    color:khaki;
     
 }
 
@@ -69,40 +70,8 @@
     left: 200px;
     font-size: 20px;
     font-style:oblique;
-    color: white;
+    color:darkgray;
 }
-
-@media (max-width: 1024px) {
-    .header {
-        height: auto;
-    }
-
-    .content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .h1, .h6 {
-        font-size: 40px;  
-        margin-left: 0;
-    }
-
-    .image {
-        width: 400px;
-        height: 400px;
-    }
-
-    .image1 .image:hover {
-        width: 250px;
-        height: 250px;
-    }
-
-    li button {
-        font-size: 18px;
-        padding: 18px;
-    }
-}
-
 
 li{
     display: inline;
@@ -135,17 +104,18 @@ nav ul li button:hover{
 }
 
 .Flavors{
+    
     float: left;
     animation: sideIn 1s ease-in-out 1.0s backwards; 
     
 }
 .journey{
-    
+   
     margin-left: 300px;
     font-family:'Times New Roman', Times, serif;
     font-size: 50px;
     font-style: oblique;
-    margin-top: 50px;
+    margin-top: 80px;
     color: white;
 }
 
@@ -191,7 +161,7 @@ nav ul li button:hover{
 }
 
 .image1{
-    margin-top: 80px;
+    margin-top: 200px;
 }
 
 .image{
@@ -551,16 +521,3 @@ form{
 #require{
     margin-left: 50px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
